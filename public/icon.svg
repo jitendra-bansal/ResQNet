@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#0e7490"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Outer glowing safety ring -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#0891b2" stroke-width="4" stroke-opacity="0.3"/>
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#22d3ee" stroke-width="2" stroke-opacity="0.2" stroke-dasharray="8 8"/>
+
+  <!-- Shield Base -->
+  <g filter="url(#glow)">
+    <path d="M256 72 C330 110 390 120 408 132 C412 248 376 348 256 424 C136 348 100 248 104 132 C122 120 182 110 256 72 Z"
+          fill="url(#shieldGrad)" stroke="#67e8f9" stroke-width="8"/>
+  </g>
+
+  <!-- Inner Shield Contrast Accent -->
+  <path d="M256 96 C318 128 370 136 384 146 C388 238 358 322 256 392 C154 322 124 238 128 146 C142 136 194 128 256 96 Z"
+        fill="#042f2e" fill-opacity="0.75"/>
+
+  <!-- Medical Cross & Pulse Waveform -->
+  <!-- Cross Vertical -->
+  <rect x="236" y="160" width="40" height="150" rx="10" fill="#ffffff" fill-opacity="0.95"/>
+  <!-- Cross Horizontal -->
+  <rect x="181" y="215" width="150" height="40" rx="10" fill="#ffffff" fill-opacity="0.95"/>
+
+  <!-- Neon Heartbeat / ECG Wave -->
+  <path d="M 140 235 L 210 235 L 230 195 L 256 280 L 282 190 L 302 235 L 372 235"
+        fill="none" stroke="url(#glowGrad)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Center Heart Guardian Emblem -->
+  <circle cx="256" cy="336" r="14" fill="#22d3ee"/>
+</svg>

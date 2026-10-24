@@ -1,0 +1,11 @@
+{
+  "name": "Remix ResQNet - Emergency Response \u0026 Safety Network",
+  "description": "Every Second Counts. Every Citizen Connected. Health, wellness, and rapid emergency intervention.",
+  "requestFramePermissions": [
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

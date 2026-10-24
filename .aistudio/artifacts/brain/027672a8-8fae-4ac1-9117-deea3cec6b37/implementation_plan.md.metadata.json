@@ -1,0 +1,6 @@
+{
+  "summary":  "Implementation plan for granting browser and iframe microphone access, enabling on-demand click-to-listen voice input across the onboarding conversation and Home page voice assistant, and displaying a live audio waveform with real-time spoken text preview.",
+  "updatedAt":  "2026-10-23T05:02:29.889441156Z",
+  "requestFeedback":  true,
+  "userFacing":  true
+}
